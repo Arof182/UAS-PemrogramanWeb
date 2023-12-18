@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAS Pemrograman Web</title>
+    <link rel="stylesheet" type="text/css" href="Contact.css">
+    <script src="Contact.js"></script>
+</head>
+<body>
+    <!--Navbar-->
+    <div class="container-list">
+        <li class="list"><a href="../Profile/Profile.html">Profile</a></li>
+        <li class="list">Contact</li>
+    </div>
+
+    <!--Contact-->
+    <div class="container-form">
+        <Form class="form" action="data.php" method="post">
+            <h2 class="contact-label" id="contact" onmouseover="changeBackground()" onmouseout="restoreBackground()">Contact</h2>
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="nama">Nama :</label><br>
+            <input type="text" id="nama" name="nama" required><br>
+            <label for="usia">Usia :</label><br>
+            <input type="text" id="usia" name="usia" oninput="Upper()" required><br>
+            <label for="pekerjaan">Pekerjaan :</label><br>
+            <input type="radio" id="pekerjaan1" name="pekerjaan" value="Dosen">
+            <label for="pekerjaan1">Dosen</label><br>
+            <input type="radio" id="pekerjaan2" name="pekerjaan" value="Mahasiswa">
+            <label for="pekerjaan2">Mahasiswa</label><br>
+            <input type="radio" id="pekerjaan3" name="pekerjaan" value="Lain-lain" required>
+            <label for="pekerjaan3">Lain-lain</label><br>
+            <label for="telepon">No Telepon :</label><br>
+            <input type="tel" id="telepon" name="telepon" placeholder="08xxxx" required><br><br>
+            <input type="submit" onfocus="Focus(this)" value="submit">
+        </Form>
+    </div>
+
+</body>
+</html> 
